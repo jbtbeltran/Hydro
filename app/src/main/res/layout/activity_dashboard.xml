@@ -213,7 +213,7 @@
         android:layout_marginStart="227dp"
         android:layout_marginEnd="61dp"
         android:layout_marginBottom="350dp"
-        android:text="Nutrient Level"
+        android:text="Nutrient Level 1"
         android:textColor="@color/black" />
 
     <TextView
