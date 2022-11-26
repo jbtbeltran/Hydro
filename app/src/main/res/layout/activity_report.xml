@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CECECE"
+    tools:context=".ReportActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6CBCE2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/myToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6CBCE2"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:title="             Hydro"
+                app:titleTextColor="#FFFFFF"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="2dp" />
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="#6CBCE2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/menu_40px" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Button
+        android:id="@+id/btnCompleted"
+        android:layout_width="328dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="542dp"
+        android:backgroundTint="#009cb7"
+        android:text="Daily Report (Today Date)" />
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="273dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="124dp"
+        android:backgroundTint="#3085c4"
+        android:text="Download"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="273dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="166dp"
+        android:backgroundTint="#a2d8ed"
+        android:text="Search"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/txtBoxSearch"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="169dp"
+        android:background="@drawable/test_border"
+        android:drawableLeft="@drawable/search_25px"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/material_dynamic_neutral60"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnMonthlyReport"
+        android:layout_width="328dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="217dp"
+        android:backgroundTint="#009cb7"
+        android:text="Monthly Report (Month)" />
+
+    <EditText
+        android:id="@+id/txtBoxResult3"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/test_border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:password="false"
+        android:text="Result"
+        android:textColor="@color/material_dynamic_neutral60"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtBoxSearch3"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="345dp"
+        android:background="@drawable/test_border"
+        android:drawableLeft="@drawable/search_25px"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/material_dynamic_neutral60"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSearch3"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="268dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="343dp"
+        android:backgroundTint="#a2d8ed"
+        android:text="Search"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnDownload3"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="269dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="303dp"
+        android:backgroundTint="#3085c4"
+        android:text="Download"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnWeeklyReport2"
+        android:layout_width="328dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="385dp"
+        android:backgroundTint="#009cb7"
+        android:text="Weekly Report (Week)" />
+
+    <EditText
+        android:id="@+id/txtBoxResult2"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="463dp"
+        android:background="@drawable/test_border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:password="false"
+        android:text="Result"
+        android:textColor="@color/material_dynamic_neutral60"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtBoxSearch2"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="505dp"
+        android:background="@drawable/test_border"
+        android:drawableLeft="@drawable/search_25px"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/material_dynamic_neutral60"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSearch2"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="267dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="505dp"
+        android:backgroundTint="#a2d8ed"
+        android:text="Search"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnDownload2"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="267dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="465dp"
+        android:backgroundTint="#3085c4"
+        android:text="Download"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/txtBoxResult"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/test_border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:password="false"
+        android:text="Result"
+        android:textColor="@color/material_dynamic_neutral60"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

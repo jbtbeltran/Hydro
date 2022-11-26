@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CECECE"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/placeholder4"
+        android:layout_width="187dp"
+        android:layout_height="173dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="435dp"
+        app:srcCompat="@drawable/aqua" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6CBCE2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/myToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6CBCE2"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:title="             Hydro"
+                app:titleTextColor="#FFFFFF"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="2dp" />
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="#6CBCE2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/menu_40px" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/txtBoxSearch"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="355dp"
+        android:background="@drawable/test_border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:text="Username"
+        android:textColor="@color/material_dynamic_neutral60"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtBoxResult"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="307dp"
+        android:background="@drawable/test_border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:password="false"
+        android:text="Password"
+        android:textColor="@color/material_dynamic_neutral60"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnCompleted"
+        android:layout_width="166dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="203dp"
+        android:backgroundTint="#009cb7"
+        android:text="Back Up" />
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="166dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="134dp"
+        android:backgroundTint="#a2d8ed"
+        android:text="Restore" />
+
+    <TextView
+        android:id="@+id/textViewECLv"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="284dp"
+        android:text="Change Password?"
+        android:textColor="#009cb7" />
+
+</RelativeLayout>
