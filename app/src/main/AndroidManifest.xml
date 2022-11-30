@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hydro">
         <activity
-            android:name=".LoginRealActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".DashboardActivity"
@@ -25,9 +25,8 @@
             android:name=".SettingsActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="true"
-            android:label="AQUA">
+            android:name=".LoginRealActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
