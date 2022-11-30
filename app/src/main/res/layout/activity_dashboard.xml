@@ -127,7 +127,7 @@
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="60%"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textSize="24sp" />
 
         <TextView
@@ -141,7 +141,7 @@
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:text="20°C"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textSize="24sp" />
 
     </FrameLayout>
@@ -157,7 +157,7 @@
         android:layout_marginEnd="112dp"
         android:layout_marginBottom="513dp"
         android:text="EC Level"
-        android:textColor="@color/black" />
+        android:textColor="#000000" />
 
     <FrameLayout
         android:id="@+id/FrameLayoutSched1"
@@ -181,7 +181,7 @@
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="07:45am"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textSize="24sp" />
 
         <FrameLayout
@@ -198,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Completed"
-                android:textColor="@color/black" />
+                android:textColor="#000000" />
         </FrameLayout>
         android:text="TextView" />
     </FrameLayout>
@@ -214,7 +214,7 @@
         android:layout_marginEnd="61dp"
         android:layout_marginBottom="350dp"
         android:text="Nutrient Level"
-        android:textColor="@color/black" />
+        android:textColor="#000000" />
 
     <TextView
         android:id="@+id/textViewWaterLv"
@@ -227,7 +227,7 @@
         android:layout_marginEnd="228dp"
         android:layout_marginBottom="349dp"
         android:text="Water Level"
-        android:textColor="@color/black" />
+        android:textColor="#000000" />
 
     <TextView
         android:id="@+id/textViewPHLv"
@@ -240,6 +240,6 @@
         android:layout_marginEnd="258dp"
         android:layout_marginBottom="515dp"
         android:text="PH Level"
-        android:textColor="@color/black" />
+        android:textColor="#000000" />
 
 </RelativeLayout>
