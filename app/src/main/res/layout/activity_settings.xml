@@ -59,7 +59,7 @@
         android:layout_marginEnd="221dp"
         android:layout_marginBottom="572dp"
         android:text="Settings"
-        android:textColor="@color/black"
+        android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -68,7 +68,7 @@
         android:layout_height="2dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="532dp"
-        android:background="@android:color/black" />
+        android:background="#000000" />
 
     <Button
         android:id="@+id/btnWaterPumpOff"
@@ -94,7 +94,7 @@
         android:layout_marginEnd="198dp"
         android:layout_marginBottom="446dp"
         android:text="Dark Mode"
-        android:textColor="@color/black"
+        android:textColor="#000000"
         android:textSize="25sp"
         android:textStyle="bold" />
 
