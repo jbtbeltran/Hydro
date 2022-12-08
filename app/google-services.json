@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "203932939431",
+    "project_id": "hydro-30a65",
+    "storage_bucket": "hydro-30a65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203932939431:android:5c2ba1b12308bcf5f65782",
+        "android_client_info": {
+          "package_name": "com.example.hydro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203932939431-4bb19cc6quo08ejk0gkh1nb9f0n5ooe4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN1ujs6smmKf8qgE466ivickYgeQ1R5cw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203932939431-4bb19cc6quo08ejk0gkh1nb9f0n5ooe4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
