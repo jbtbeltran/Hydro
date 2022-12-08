@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/nav_home">
+    <activity
+        android:id="@+id/nav_home"
+        android:name="com.example.hydro.DashboardActivity"
+        android:label="activity_dashboard"
+        tools:layout="@layout/activity_dashboard" />
+    <activity
+        android:id="@+id/nav_report"
+        android:name="com.example.hydro.ReportActivity"
+        android:label="activity_report"
+        tools:layout="@layout/activity_report" />
+    <activity
+        android:id="@+id/nav_admin_mode"
+        android:name="com.example.hydro.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/nav_sched"
+        android:name="com.example.hydro.SchedulerActivity"
+        android:label="activity_scheduler"
+        tools:layout="@layout/activity_scheduler" />
+    <activity
+        android:id="@+id/nav_settings"
+        android:name="com.example.hydro.SettingsActivity"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_settings" />
+</navigation>
