@@ -53,7 +53,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                         show(SettingsActivity.class);
                         break;
                     case R.id.nav_logout:
-//                     logout function here
+//                     Todo: logout function here
                         break;
                 }
                 return false;
