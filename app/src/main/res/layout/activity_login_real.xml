@@ -12,22 +12,22 @@
         android:id="@+id/placeholder"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_above="@id/txtBoxUsername"
+        android:layout_above="@id/emailaddress"
         android:layout_marginBottom="20dp"
         app:srcCompat="@drawable/aqua" />
 
 
     <EditText
-        android:id="@+id/txtBoxUsername"
+        android:id="@+id/emailaddress"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_above="@+id/txtBoxPassword"
+        android:layout_above="@+id/password"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/test_border"
+        android:hint="Email Address"
         android:ems="10"
-        android:hint="Username"
         android:inputType="textPersonName"
         android:padding="5dp"
         android:paddingStart="10dp"
@@ -35,10 +35,10 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/txtBoxPassword"
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_above="@+id/textViewECLv"
+        android:layout_above="@+id/resetPassword"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:background="@drawable/test_border"
@@ -52,8 +52,8 @@
         android:textSize="20sp" />
 
     <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
+        android:id="@+id/login"
+        android:layout_width="166dp"
         android:layout_height="65dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
@@ -66,12 +66,12 @@
         android:text="Login" />
 
     <TextView
-        android:id="@+id/textViewECLv"
         android:layout_width="match_parent"
+        android:id="@+id/resetPassword"
         android:layout_height="wrap_content"
-        android:layout_above="@id/btnLogin"
+        android:layout_above="@id/login"
         android:layout_marginStart="40dp"
-        android:text="Change Password?"
+        android:text="Reset Password"
         android:textColor="#009cb7" />
 
 </RelativeLayout>
