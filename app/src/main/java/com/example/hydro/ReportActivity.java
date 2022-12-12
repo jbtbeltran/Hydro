@@ -1,14 +1,19 @@
 package com.example.hydro;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class ReportActivity extends AppCompatActivity {
+
+public class ReportActivity extends BaseActivity {
+
+    @Override
+    protected void setCustomContentView() {
+        setContentView(R.layout.activity_report);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_report);
+
+
     }
 }

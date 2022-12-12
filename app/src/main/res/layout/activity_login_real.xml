@@ -10,89 +10,46 @@
 
     <ImageView
         android:id="@+id/placeholder"
-        android:layout_width="187dp"
-        android:layout_height="173dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="113dp"
-        android:layout_marginTop="122dp"
-        android:layout_marginEnd="111dp"
-        android:layout_marginBottom="435dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@id/emailaddress"
+        android:layout_marginBottom="20dp"
         app:srcCompat="@drawable/aqua" />
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#6CBCE2">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/myToolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#6CBCE2"
-                android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:title="Hydro"
-                app:titleTextColor="#FFFFFF"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="2dp" />
-
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    </com.google.android.material.appbar.AppBarLayout>
 
     <EditText
         android:id="@+id/emailaddress"
-        android:layout_width="222dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="94dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="355dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/password"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/test_border"
         android:hint="Email Address"
         android:ems="10"
+        android:inputType="textPersonName"
         android:padding="5dp"
         android:paddingStart="10dp"
         android:textColor="#8F9193"
         android:textSize="20sp" />
-    <!-- android:text="Username"-->
-    <!--android:inputType="textPersonName"-->
-
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="222dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="94dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="307dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/resetPassword"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:background="@drawable/test_border"
         android:ems="10"
-        android:inputType="textPassword"
+        android:hint="Password"
+        android:inputType="textPersonName"
         android:padding="5dp"
         android:paddingStart="10dp"
-        android:hint="Password"
+        android:password="true"
         android:textColor="#8F9193"
         android:textSize="20sp" />
-
 
     <Button
         android:id="@+id/login"
@@ -101,24 +58,20 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="126dp"
-        android:layout_marginEnd="119dp"
-        android:layout_marginBottom="201dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="203dp"
         android:backgroundTint="#009cb7"
         android:text="Login" />
 
     <TextView
+        android:layout_width="match_parent"
         android:id="@+id/resetPassword"
-        android:layout_width="132dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="99dp"
-        android:layout_marginEnd="179dp"
-        android:layout_marginBottom="284dp"
+        android:layout_above="@id/login"
+        android:layout_marginStart="40dp"
         android:text="Reset Password"
         android:textColor="#009cb7" />
-
 
 </RelativeLayout>
