@@ -8,61 +8,182 @@
     tools:context=".DashboardActivity">
 
 
-    <ImageView
-        android:id="@+id/placeholder4"
-        android:layout_width="121dp"
-        android:layout_height="116dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="226dp"
-        android:layout_marginTop="387dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="228dp"
-        app:srcCompat="@drawable/aqua" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/placeholder2"
-        android:layout_width="121dp"
-        android:layout_height="116dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="226dp"
-        android:layout_marginTop="227dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="388dp"
-        app:srcCompat="@drawable/aqua" />
+        <FrameLayout
+            android:id="@+id/frameLayoutTop"
+            android:layout_width="278dp"
+            android:layout_height="61dp"
+            android:background="@drawable/border2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15">
 
-    <ImageView
-        android:id="@+id/placeholder3"
-        android:layout_width="121dp"
-        android:layout_height="116dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="82dp"
-        android:layout_marginTop="388dp"
-        android:layout_marginEnd="207dp"
-        android:layout_marginBottom="226dp"
-        app:srcCompat="@drawable/aqua" />
+            <TextView
+                android:id="@+id/textViewWaterPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|left"
+                android:layout_marginStart="1dp"
+                android:drawableLeft="@drawable/water_40px"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="60%"
+                android:textColor="#000000"
+                android:textSize="24sp" />
 
-    <ImageView
-        android:id="@+id/placeholder1"
-        android:layout_width="121dp"
-        android:layout_height="116dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="81dp"
-        android:layout_marginTop="226dp"
-        android:layout_marginEnd="208dp"
-        android:layout_marginBottom="389dp"
-        app:srcCompat="@drawable/aqua" />
+            <TextView
+                android:id="@+id/textViewTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_horizontal"
+                android:layout_marginStart="1dp"
+                android:drawableLeft="@drawable/temperature_40px"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="20°C"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textViewECLv"
+            android:layout_width="122dp"
+            android:layout_height="30dp"
+            android:text="EC Level"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.28" />
+
+        <TextView
+            android:id="@+id/textViewNutrientLv"
+            android:layout_width="128dp"
+            android:layout_height="26dp"
+            android:text="Nutrient Level"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.52" />
+
+        <TextView
+            android:id="@+id/textViewPHLvLb"
+            android:layout_width="110dp"
+            android:layout_height="29dp"
+            android:text="PH Level"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.28" />
+
+        <TextView
+            android:id="@+id/textViewWaterLv"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="Water Level"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.52" />
+
+        <FrameLayout
+            android:id="@+id/FrameLayoutPHLv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewWaterLv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPHLvLb">
+
+            <TextView
+                android:id="@+id/textViewPHLv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="test"
+                android:textColor="#000000" />
+
+            <ProgressBar
+                android:id="@+id/progressBarPHLv"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/roundprogbar1"
+                android:secondaryProgress="0"/>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayoutSched1"
+            android:layout_width="259dp"
+            android:layout_height="56dp"
+            android:background="@drawable/border2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.78">
+
+            <TextView
+                android:id="@+id/textViewTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|left"
+                android:layout_marginStart="1dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="07:45am"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutCompleted1"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border3">
+
+                <TextView
+                    android:id="@+id/textViewCompleted1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Completed"
+                    android:textColor="#000000" />
+            </FrameLayout>
+            <!--        android:text="TextView" />-->
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!--<com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -104,143 +225,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 -->
-    <FrameLayout
-        android:id="@+id/frameLayoutTop"
-        android:layout_width="210dp"
-        android:layout_height="53dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="572dp"
-        android:background="@drawable/border2">
 
-        <TextView
-            android:id="@+id/textViewWaterPercentage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|left"
-            android:layout_marginStart="1dp"
-            android:drawableLeft="@drawable/water_40px"
-            android:gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingTop="10dp"
-            android:text="60%"
-            android:textColor="#000000"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/textViewTemperature"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right|center_horizontal"
-            android:layout_marginStart="1dp"
-            android:drawableLeft="@drawable/temperature_40px"
-            android:gravity="center"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp"
-            android:text="20°C"
-            android:textColor="#000000"
-            android:textSize="24sp" />
-
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/textViewECLv"
-        android:layout_width="71dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="227dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="513dp"
-        android:text="EC Level"
-        android:textColor="#000000" />
-
-    <FrameLayout
-        android:id="@+id/FrameLayoutSched1"
-        android:layout_width="252dp"
-        android:layout_height="54dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="84dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginBottom="154dp"
-        android:background="@drawable/border2">
-
-        <TextView
-            android:id="@+id/textViewTime1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|left"
-            android:layout_marginStart="1dp"
-            android:gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingTop="10dp"
-            android:text="07:45am"
-            android:textColor="#000000"
-            android:textSize="24sp" />
-
-        <FrameLayout
-            android:id="@+id/FrameLayoutCompleted1"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center|right"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/border3">
-
-            <TextView
-                android:id="@+id/textViewCompleted1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Completed"
-                android:textColor="#000000" />
-        </FrameLayout>
-<!--        android:text="TextView" />-->
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/textViewNutrientLv"
-        android:layout_width="123dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="227dp"
-        android:layout_marginEnd="61dp"
-        android:layout_marginBottom="350dp"
-        android:text="Nutrient Level"
-        android:textColor="#000000" />
-
-    <TextView
-        android:id="@+id/textViewWaterLv"
-        android:layout_width="105dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginEnd="228dp"
-        android:layout_marginBottom="349dp"
-        android:text="Water Level"
-        android:textColor="#000000" />
-
-    <TextView
-        android:id="@+id/textViewPHLv"
-        android:layout_width="71dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="82dp"
-        android:layout_marginEnd="258dp"
-        android:layout_marginBottom="515dp"
-        android:text="PH Level"
-        android:textColor="#000000" />
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawerLayout"
         android:layout_width="match_parent"
@@ -311,11 +296,11 @@
             android:id="@+id/navigationView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_gravity="start"
             android:background="@drawable/artboard_1"
             app:headerLayout="@layout/header_nav_layout"
-            app:itemTextColor="@color/white"
             app:itemIconTint="@color/white"
-            app:menu="@menu/navigation_menu"
-            android:layout_gravity="start" />
+            app:itemTextColor="@color/white"
+            app:menu="@menu/navigation_menu" />
     </androidx.drawerlayout.widget.DrawerLayout>
 </RelativeLayout>

@@ -5,13 +5,16 @@
       <map>
         <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/drawable/border2.xml" value="0.1445" />
         <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/drawable/border3.xml" value="0.1445" />
+        <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/drawable/custom_progress_drawable.xml" value="0.153" />
+        <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/drawable/roundprogbar1.xml" value="0.153" />
         <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/drawable/test_border.xml" value="0.1945" />
-        <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
+        <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/layout/activity_dashboard.xml" value="0.27488151658767773" />
         <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/layout/activity_login_real.xml" value="0.25" />
         <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/layout/activity_report.xml" value="0.25" />
         <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/layout/activity_scheduler.xml" value="0.25" />
         <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/layout/activity_settings.xml" value="0.22" />
+        <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/layout/activity_signup.xml" value="0.215625" />
         <entry key="..\:/Users/Ronald beltan/AndroidStudioProjects/Hydro/app/src/main/res/layout/header_nav_layout.xml" value="0.215625" />
       </map>
     </option>
